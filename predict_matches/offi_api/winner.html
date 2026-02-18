@@ -1,0 +1,277 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles_1.css">
+    <title>Predict Premier League matches</title>
+</head>
+<header class = "main_header">
+        <div id="img">
+            <img src="epl.png" alt="EPL img" height="50" width="50">
+            <H1>Predict Premier League matches</H1>
+        </div>
+        <div>
+            <ul id="windows">
+                <li><a href="#winner.html">WINNER</a></li>
+                <li><a href="#">SCORE</a></li>
+                <li><a href="#">STATISTICS</a></li>
+            </ul>
+        </div>
+</header>
+<body>
+    <div class="first_thing">
+        <h2>Predict EPL matches</h2>
+        <p>Fill in the details below to predict </p>
+    </div>
+    <div class="second_thing">
+        <form id="predictionForm" >
+            <div class="input_cols">
+                <div class="column_1">
+                    <label for="Home" class="form-label" onchange="updateLogo_1()">Home </label>
+                    <select id="home" name="home" class="form-select" required>
+                        <option value="">-- Select Home Team --</option>
+                        <option value="Arsenal" data-logo="arsenal.png">Arsenal</option>
+                        <option value="Aston Villa" data-logo="Aston Villa.png">Aston Villa</option>
+                        <option value="Bournemouth" data-logo="Bournemouth.png">Bournemouth</option>
+                        <option value="Brentford" data-logo="brentford.png">Brentford</option>
+                        <option value="Brighton" data-logo="brighton.png">Brighton</option>
+                        <option value="Chelsea" data-logo="chelsea.png">Chelsea</option>
+                        <option value="Crystal Palace" data-logo="Crystal Palace.png">Crystal Palace</option>
+                        <option value="Everton" data-logo="everton.png">Everton</option>
+                        <option value="Fulham" data-logo="fulham.png">Fulham</option>
+                        <option value="Ipswich Town" data-logo="ipswich_town.png">Ipswich Town</option>
+                        <option value="Leicester City" data-logo="leicester_city.png">Leicester City</option>
+                        <option value="Liverpool" data-logo="liverpool.png">Liverpool</option>
+                        <option value="Manchester City" data-logo="Manchester City.png">Manchester City</option>
+                        <option value="Manchester Utd" data-logo="Manchester Utd.png">Manchester Utd</option>
+                        <option value="Newcastle Utd" data-logo="Newcastle Utd.png">Newcastle Utd</option>
+                        <option value="Nott'ham Forest" data-logo="Nott'ham Forest.png">Nott'ham Forest</option>
+                        <option value="Southampton" data-logo="southampton.png">Southampton</option>
+                        <option value="Tottenham" data-logo="tottenham.png">Tottenham</option>
+                        <option value="West Ham" data-logo="West Ham.png">West Ham</option>
+                        <option value="Wolves" data-logo="wolves.png">Wolves</option>
+                    </select>
+                </div>
+                <div class="column_2">
+                    <label for="Away" class="form-label">Away </label>
+                    <select id="away" name="away" class="form-select" required>
+                        <option value="">-- Select Away Team --</option>
+                        <option value="Arsenal" data-logo="arsenal.png">Arsenal</option>
+                        <option value="Aston Villa" data-logo="Aston Villa.png">Aston Villa</option>
+                        <option value="Bournemouth" data-logo="Bournemouth.png">Bournemouth</option>
+                        <option value="Brentford" data-logo="brentford.png">Brentford</option>
+                        <option value="Brighton" data-logo="brighton.png">Brighton</option>
+                        <option value="Chelsea" data-logo="chelsea.png">Chelsea</option>
+                        <option value="Crystal Palace" data-logo="Crystal Palace.png">Crystal Palace</option>
+                        <option value="Everton" data-logo="everton.png">Everton</option>
+                        <option value="Fulham" data-logo="fulham.png">Fulham</option>
+                        <option value="Ipswich Town" data-logo="ipswich_town.png">Ipswich Town</option>
+                        <option value="Leicester City" data-logo="leicester_city.png">Leicester City</option>
+                        <option value="Liverpool" data-logo="liverpool.png">Liverpool</option>
+                        <option value="Manchester City" data-logo="Manchester City.png">Manchester City</option>
+                        <option value="Manchester Utd" data-logo="Manchester Utd.png">Manchester Utd</option>
+                        <option value="Newcastle Utd" data-logo="Newcastle Utd.png">Newcastle Utd</option>
+                        <option value="Nott'ham Forest" data-logo="Nott'ham Forest.png">Nott'ham Forest</option>
+                        <option value="Southampton" data-logo="southampton.png">Southampton</option>
+                        <option value="Tottenham" data-logo="tottenham.png">Tottenham</option>
+                        <option value="West Ham" data-logo="West Ham.png">West Ham</option>
+                        <option value="Wolves" data-logo="wolves.png">Wolves</option>
+                    </select>
+                </div>
+                <div class="column_3">
+                    <label for="stadium" class="form-label">Stadium </label>
+                    <select id="stadium" name="studium" class="form-select">
+                        <option >-- Select Stadium --</option>
+                        <option value="Anfield">Anfield</option>
+                        <option value="Craven Cottage">Craven Cottage</option>
+                        <option value="Emirates Stadium">Emirates Stadium</option>
+                        <option value="Etihad Stadium">Etihad Stadium</option>
+                        <option value="Goodison Park">Goodison Park</option>
+                        <option value="Gtech Community Stadium">Gtech Community Stadium</option>
+                        <option value="King Power Stadium">King Power Stadium</option>
+                        <option value="London Stadium">London Stadium</option>
+                        <option value="Molineux Stadium">Molineux Stadium</option>
+                        <option value="Old Trafford">Old Trafford</option>
+                        <option value="Portman Road Stadium">Portman Road Stadium</option>
+                        <option value="Selhurst Park">Selhurst Park</option>
+                        <option value="St James' Park">St James' Park</option>
+                        <option value="St Mary's Stadium">St Mary's Stadium</option>
+                        <option value="Stamford Bridge">Stamford Bridge</option>
+                        <option value="The American Express Stadium">The American Express Stadium</option>
+                        <option value="The City Ground">The City Ground</option>
+                        <option value="Tottenham Hotspur Stadium">Tottenham Hotspur Stadium</option>
+                        <option value="Villa Park">Villa Park</option>
+                        <option value="Vitality Stadium">Vitality Stadium</option>
+                    </select>
+                </div>
+                <div class="column_4">
+                    <label for="Attendance" class="form-label">Attendance </label>
+                    <input type="number" id="attendance" name="attendence" class="form-control">
+                </div>
+            </div>
+
+
+            <div id="logo_1Container">
+                <img id="teamLogo_1" src="" alt="شعار الفريق"  >
+            </div>
+            <div id="logo_2Container">
+                <img id="teamLogo_2" src="" alt="شعار الفريق">
+            </div>
+            <div id="column_5">
+                <button type="button" onclick="submitForm()" id="btn">Predict</button>
+            </div>
+
+
+            <div id="output">
+            </div>
+            <div id="loader" style="display: none;" class="text-center my-3">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const button= document.getElementById("btn");
+        const box=document.getElementById("output");
+        const loader = document.getElementById('loader');
+        button.addEventListener('click',()=>{
+            loader.style.display = 'block';
+            box.style.display = 'none';
+            setTimeout(() => {
+                loader.style.display = 'none';
+                box.style.display = 'block'}, 3000); 
+
+        })
+
+
+        team_home=document.getElementById("home")
+        logo_1_Container=document.getElementById("logo_1Container")
+        home_logo=document.getElementById("teamLogo_1")
+        team_home.addEventListener('change',(e)=>{
+                const selectedOption = e.target.options[e.target.selectedIndex];
+                const img_path = selectedOption.getAttribute('data-logo');
+                if (img_path) {
+                               home_logo.src = img_path;// تعيين مسار الصورة
+                               logo_1_Container.style.display = 'block'; // إظهار الصورة
+                } else {
+                               logo_1_Container.style.display = 'none';  // إخفاء الصورة إذا لم يتم اختيار شيء
+                }})
+
+
+        team_away=document.getElementById("away")
+        logo_2_Container=document.getElementById("logo_2Container")
+        away_logo=document.getElementById("teamLogo_2")
+        team_away.addEventListener('change',(e)=>{
+                const selectedOption = e.target.options[e.target.selectedIndex];
+                const img_path = selectedOption.getAttribute('data-logo');
+                if (img_path) {
+                               away_logo.src = img_path;// تعيين مسار الصورة
+                               logo_2_Container.style.display = 'block'; // إظهار الصورة
+                } else {
+                               logo_2_Container.style.display = 'none';  // إخفاء الصورة إذا لم يتم اختيار شيء
+                }})
+
+
+        function checkSelection() {
+            if (team_home.value !== "" && team_away.value !== "") {
+                       button.style.display = 'block';
+            } else {
+                       button.style.display = 'none'; 
+            }}
+
+        team_home.addEventListener('change', checkSelection);
+        team_away.addEventListener('change', checkSelection);
+
+
+async function submitForm() {
+    const home = document.getElementById("home");
+    const away = document.getElementById("away");
+    const stadiumEl = document.getElementById("stadium");
+    const attendanceEl = document.getElementById("attendance");
+
+    const homeTeam = home.value;
+    const awayTeam = away.value;
+    const homeLogo = home.options[home.selectedIndex].getAttribute("data-logo");
+    const awayLogo = away.options[away.selectedIndex].getAttribute("data-logo");
+
+    const data = { home: homeTeam, away: awayTeam };
+
+    const stadiumVal = stadiumEl.value.trim();
+    if (stadiumVal !== "" && stadiumVal !== "-- Select Stadium --") {
+        data.studium = stadiumVal;
+    }
+
+    const attendanceVal = attendanceEl.value.trim();
+    if (attendanceVal !== "") {
+        data.attendence = parseInt(attendanceVal); 
+    }
+
+    console.log("Data being sent:", data);
+
+    try {
+        const response = await fetch("http://127.0.0.1:8000/predict/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            const result = await response.json();
+            const winner = result.prediction;
+            const isDraw = winner === "Drow";
+
+            if (isDraw) {
+                      document.getElementById("output").innerHTML = `
+                                  <div class="result-card">
+                                            <span class="draw-text">DRAW</span>
+                                  </div>
+                      `;
+            } else {
+                      const homeTeam = home.value;
+                      const homeLogo = home.options[home.selectedIndex].getAttribute("data-logo");
+                      const awayLogo = away.options[away.selectedIndex].getAttribute("data-logo");
+                      const winnerLogo = winner === homeTeam ? homeLogo : awayLogo;
+
+                      document.getElementById("output").innerHTML = `
+                                  <div class="result-card">
+                                            <div class="team-block-winner-glow">
+                                                <div id="twin">
+                                                        <img src="${winnerLogo}" alt="${winner}">
+                                                        <p>${winner}</p>
+                                                        <span class="crown">win</span>
+                                                </div> 
+                                            </div>
+                                  </div>`;}
+            }else {
+            let errorText = 'Unknown error';
+            try {
+                const error = await response.json();
+                errorText = JSON.stringify(error.detail || error);
+            } catch(e) {
+                errorText = response.statusText;
+            }
+            document.getElementById("output").innerHTML =
+                `<div class="alert alert-danger">Error: ${errorText}</div>`;
+        }
+    } catch (err) {
+        document.getElementById("output").innerHTML =
+            `<div class="alert alert-danger">Network error: ${err.message}</div>`;
+    }
+}
+
+    </script>
+</body>
+    <footer class="main_footer">
+        <div class="footer-content">
+            <p>&copy; Predict Premier League matches. All rights reserved.</p>
+            <nav >
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </nav>
+        </div>
+    </footer>
+
+</html>

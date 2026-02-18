@@ -1,0 +1,361 @@
+@keyframes bounce-and-glow {
+  0% { transform: translateY(0); filter: brightness(100%); }
+  50% { transform: translateY(-2px); filter: brightness(100%); }
+  100% { transform: translateY(0); filter: brightness(100%); }
+}
+@keyframes logo {
+  0% { transform: translateY(0); filter: brightness(100%); }
+  50% { transform: translateY(-4px); filter: brightness(100%); }
+  100% { transform: translateY(0); filter: brightness(100%); }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.main_header{
+    display: flex;/* to initialize flexbox */
+    justify-content: start;/*to start from the left */
+    align-items: center;
+    gap: 200px;
+    background-color: #00FF85;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.main_header #img{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    color:#360D3A
+    
+
+}
+.main_header #windows{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    list-style: none;/* إزالة النقاط من القائمة */
+}
+.main_header #windows a{
+    text-decoration: none;/*ازالة الخط اسفل النص */
+    font-weight: bold;
+    transition: 0.3s;
+    font-size:large;
+    color:#360D3A
+}
+.main_footer{
+    display: flex;/* to initialize flexbox */
+    justify-content: space-around;/*to start from the left */
+    align-items: center;
+    gap: 200px;
+    background-color: #00FF85;
+    height: 70px;
+    margin-top: 80%;
+}
+.main_footer .footer-content{
+    display: flex;/* to initialize flexbox */
+    justify-content: space-around;/*to start from the left */
+    align-items: center;
+    gap: 200px;
+}
+.main_footer .footer-content nav a{
+    text-decoration: none;/*ازالة الخط اسفل النص */
+    font-weight: bold;
+    transition: 0.3s;
+    font-size:large;
+    color:#360D3A
+
+}
+.main_footer .footer-content nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    list-style: none;/* إزالة النقاط من القائمة */
+}
+.main_footer .footer-content p{
+    color:#360D3A
+}
+.first_thing h2{
+  font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+  font-size: 40px; 
+  color: #360D3A; 
+  font-weight: bold;
+  height: fit-content;
+  background-color: #00FF85;
+  border-radius: 13px;
+  padding: 5px;
+  animation: bounce-and-glow 2s ease-in-out infinite;
+  margin-left: 35%;
+  width: fit-content;
+  margin-top: 6%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /*border: 2px solid #360D3A ;*/
+
+}
+.first_thing p {
+  font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+  font-size: 15px;              
+  color: #000000;                    
+  line-height: 1.6;          
+  text-align: center;            
+  font-weight: bold;              
+  width: fit-content;
+  margin-left: 41%;
+  animation: bounce-and-glow 2s ease-in-out infinite;
+}
+#predictionForm{
+    margin-top: 5%;
+}
+#predictionForm .input_cols{
+    display: flex;
+    justify-content: space-around;
+    background-color: #360d3af5;
+    padding-top: 5%;
+    height: 80%;
+    width: fit-content;
+    margin-left: 4%;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+#predictionForm .column_5{
+    margin-top: 5%;
+    margin-left: 50%;
+}
+#predictionForm .input_cols .column_1{
+    flex-direction: flex;
+    align-items: center;
+    width: 10%;
+}
+#predictionForm .input_cols .column_2{
+    flex-direction: flex;
+    align-items: center;
+    width: 10%;
+}
+#predictionForm .input_cols .column_3{
+    flex-direction: flex;
+    align-items: center;
+    width: 10%;
+}
+#predictionForm .input_cols .column_4{
+    flex-direction: flex;
+    align-items: center;
+    width: 10%;
+}
+#predictionForm .input_cols .column_1 .form-label{
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #00FF85; 
+    font-weight: bolder;
+    height: fit-content;
+    background-color: #360D3A;
+    border-radius: 13px;
+    padding-left: 32%;
+    padding-right: 32%;
+    /*padding: 5px;*/
+    animation: bounce-and-glow 2s ease-in-out infinite;
+    width: fit-content;
+    margin-top: 6%;
+    margin-left: -35%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00FF85 ;
+
+}
+#predictionForm .input_cols .column_1 .form-label:hover{
+        background-color: #ff008c;
+
+}
+#predictionForm .input_cols .column_2 .form-label:hover{
+        background-color: #ff008c;
+
+}
+#predictionForm .input_cols .column_3 .form-label:hover{
+        background-color: #ff008c;
+
+}
+#predictionForm .input_cols .column_4 .form-label:hover{
+        background-color: #ff008c;
+
+}
+#predictionForm .input_cols .column_2 .form-label{
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #00FF85; 
+    font-weight: bolder;
+    height: fit-content;
+    background-color: #360D3A;
+    border-radius: 13px;
+    padding: 5px;
+    padding-left: 32%;
+    padding-right: 32%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    animation: bounce-and-glow 2s ease-in-out infinite;
+    margin-left: 7%;
+    width: fit-content;
+    margin-top: 6%;
+    margin-left: -14%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00FF85 ;
+
+}
+#predictionForm .input_cols .column_3 .form-label{
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #00FF85; 
+    font-weight: bolder;
+    height: fit-content;
+    background-color: #360D3A;
+    border-radius: 13px;
+    padding: 5px;
+    padding-left: 33%;
+    padding-right: 33%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    animation: bounce-and-glow 2s ease-in-out infinite;
+    width: fit-content;
+    margin-top: 6%;
+    margin-left: -9%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00FF85 ;
+}
+#predictionForm .input_cols .column_4 .form-label{
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #00FF85; 
+    font-weight: bolder;
+    height: fit-content;
+    background-color: #360D3A;
+    border-radius: 13px;
+    padding: 5px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    animation: bounce-and-glow 2s ease-in-out infinite;
+    width: fit-content;
+    margin-top: 6%;
+    margin-left: -14%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00FF85 ;
+
+}
+.form-select{
+    justify-content: start;
+}
+
+#predictionForm .input_cols .column_1 .form-select{
+    margin-top: 15%;
+    margin-left: -33%;
+    height: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#predictionForm .input_cols .column_2 .form-select{
+    margin-top: 15%;
+    margin-left: -13%;
+    height: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#predictionForm .input_cols .column_3 .form-select{
+    margin-top: 15%;
+    margin-left: -12%;
+    height: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#predictionForm .input_cols .column_4 .form-control{
+    margin-top: 15%;
+    margin-left: -12%;
+    height: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#column_5 #btn{
+    display: none;
+    height:8%;
+    width:25%;
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #360D3A; 
+    font-weight: bolder;
+    border-radius: 13px;
+    margin-left: 500;
+    margin-top:15;
+}
+#predictionForm #logo_1Container{
+    display: none;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 4%;
+    margin-top: -22%;
+    animation: logo 2s ease-in-out infinite;
+}
+
+#predictionForm #logo_2Container{
+    display: none;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 28%;
+    margin-top: -19%;
+    animation: logo 2s ease-in-out infinite;
+}
+
+#output{
+    display: none;
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #360D3A; 
+    font-weight: bolder;
+    height: 200px;
+    width: 400px;
+    /*padding: 5px;*/
+    /*padding-left: 10%;*/
+    border-radius: 13px;
+    background-color: #00FF85;
+    margin-left: 59%;
+    margin-top: -22%;
+    border:4px solid #ffffff;
+    animation: logo 2s ease-in-out infinite;
+    
+}
+#loader {
+    display: none;
+    font-family: "League Spartan", "Radikal", "Avenir", sans-serif;
+    font-size: 30px; 
+    color: #00FF85; 
+    font-weight: bolder;
+    margin-left: 70%;
+    margin-top: -16%;
+    animation: logo 2s ease-in-out infinite;
+}
+.result-card {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 5%;
+}
+.team-block-winner-glow #twin img{
+height: 90px;
+width: 90px;
+}
+
+
+
+#twin{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10%;
+    gap: 5%;
+
+}
+.draw-text{
+    padding-top: 15%;
+}
